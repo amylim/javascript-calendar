@@ -1,0 +1,47 @@
+div.calendarContainer
+{
+	width: 100%;
+	height: auto;
+	font-family: Arial, sans-serif;
+	font-size: small;
+}
+	div.calendarContainer table
+	{
+		margin: 0 auto;
+		width: 700px;
+		text-align: center;
+	}
+		div.calendarContainer .changeDate:hover
+		{
+			background-color:#eef;
+			cursor:pointer;
+		}
+		.unfocus
+		{
+			color:#ccc;
+		}
+		.focusDate
+		{
+			background-color:#eaeaff;
+		}
+		div.calendarContainer th
+		{
+			background-color:#ddf;
+		}
+		.month-weekday-header
+		{
+			background-color:#eef;
+		}
+		.timeColumn
+		{
+			background-color:#fff;
+		}
+		.eventColumn
+		{
+			background-color:#eef;
+		}
+		.navigation td:hover
+		{
+			background-color:#eef;
+			cursor:pointer;
+		}

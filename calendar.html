@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Calendar</title>
+		<link rel="stylesheet" type="text/css" href="calendar.css" />
+		<script type="text/javascript" src="calendar.js"></script>
+	</head>
+	
+	<body onload="load[mode]();" onkeypress="keyAction(event);">
+		<div class="calendarContainer">
+			<table class="navigation"> 
+				<colgroup width=33% align="center"></colgroup>
+				<colgroup width=33% align="center"></colgroup>
+				<colgroup width=33% align="center"></colgroup>
+				<tr>
+					<td title="Previous" onclick="setPrev[mode]();load[mode]();"><</td>
+					<td onclick="resetDisplayDate();load[mode]();">Today</td>
+					<td title="Next" onclick="setNext[mode]();load[mode]();">></td>
+				</tr>
+				<tr>
+					<td onclick="setMode(DAY_MODE);">Day</td>
+					<td onclick="setMode(WEEK_MODE);">Week</td>
+					<td onclick="setMode(MONTH_MODE);">Month</td>
+				</tr>
+			</table>
+			<table id="calendar"></table>
+		</div>
+	</body>
+</html>
